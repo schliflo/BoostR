@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>boostr.js - preconnect, preload and prerender utility</title>
+    <script src="../build/boostr.min.js"></script>
+</head>
+<body>
+<h1>inspect the head section of the document to see the magic happen</h1>
+<a href="http://domain-a.com">a</a>
+<a href="http://domain-a.com" data-prerender>a</a>
+<a href="http://domain-b.com" data-prerender>b</a>
+<a data-prerender="http://domain-b.com" >b</a>
+<script>
+    var boostr = new boostr();
+    boostr.start();
+    boostr.preConnect('http://domain-c.com');
+    boostr.preFetch('http://domain-x.com/img.png');
+    boostr.preRender('http://domain-a.com');
+    boostr.preRender('http://domain-d.com');
+</script>
+</body>
+</html>
