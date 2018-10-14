@@ -1,5 +1,7 @@
 # BoostR
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/schliflo/BoostR.svg)](https://greenkeeper.io/)
+
 a javascript utility for preconnect, preload and prerender, that helps you speed up your website's experience
 
 
